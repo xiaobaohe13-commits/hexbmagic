@@ -8,14 +8,14 @@ proxies:
   type: vless
   server: 58.153.148.126
   port: 443
-  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
