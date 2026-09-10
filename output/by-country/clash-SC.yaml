@@ -16,73 +16,18 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
-  server: 172.67.148.26
+  server: 188.114.97.6
   port: 443
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  uuid: b0962bf7-0b03-4353-9be1-131b78ad71d0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
+  servername: weathered-truth-581a.383.workers.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
-- name: 🇸🇨 SC 03 - xiaohe
-  type: vless
-  server: 104.19.87.194
-  port: 443
-  uuid: 407ecce0-dc85-465f-89f5-e520e9378baf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ld.223350.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ld.223350.xyz
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 104.21.19.76
-  port: 2096
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
-- name: 🇸🇨 SC 05 - xiaohe
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 06 - xiaohe
-  type: vless
-  server: 104.21.87.238
-  port: 8080
-  uuid: 8f53fce2-6c17-4e37-9ae9-d969fd85117c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vl/Wp4FqWLcoYNYXCovu4?ed=2560
-    headers:
-      Host: ApI-hub-C9A393.ALiMiRZAi539-484.WOrKerS.DeV
+      Host: weathered-truth-581a.383.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,10 +35,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
-  - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
-  - 🇸🇨 SC 05 - xiaohe
-  - 🇸🇨 SC 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -101,9 +42,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
-  - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
-  - 🇸🇨 SC 05 - xiaohe
-  - 🇸🇨 SC 06 - xiaohe
 rules:
 - MATCH,PROXIES
