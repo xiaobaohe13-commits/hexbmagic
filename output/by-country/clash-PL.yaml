@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 94.183.209.43
+  server: 94.183.209.58
   port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.43
+      Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
   server: 94.183.209.58
@@ -46,17 +46,18 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 05 - xiaohe
   type: vless
-  server: 94.183.209.58
+  server: 104.24.31.89
   port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
     headers:
-      Host: 94.183.209.58
+      Host: rayan-007.nastaran.dpdns.org
 - name: 🇵🇱 PL 06 - xiaohe
   type: vless
   server: 94.183.209.59
@@ -72,17 +73,18 @@ proxies:
       Host: 94.183.209.59
 - name: 🇵🇱 PL 07 - xiaohe
   type: vless
-  server: 94.183.209.59
+  server: 172.67.67.178
   port: 443
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 94.183.209.59
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
