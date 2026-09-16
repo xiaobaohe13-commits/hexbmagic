@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - xiaohe
-  type: vless
-  server: 176.124.223.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vmess/
     headers:
-      Host: vms.lifetime38.workers.dev
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
