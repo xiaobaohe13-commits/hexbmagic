@@ -19,7 +19,7 @@ proxies:
       Host: platform109.halalkhor.info
 - name: 🇨🇱 CL 02 - xiaohe
   type: vless
-  server: platform106.golnamakcert.top
+  server: platform107.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -27,9 +27,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform107
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform107.halalkhor.info
 - name: 🇨🇱 CL 03 - xiaohe
   type: vless
   server: platform102.golnamakcert.top
@@ -45,7 +45,7 @@ proxies:
       Host: platform102.halalkhor.info
 - name: 🇨🇱 CL 04 - xiaohe
   type: vless
-  server: platform107.golnamakcert.top
+  server: platform106.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -53,9 +53,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform106
     headers:
-      Host: platform107.halalkhor.info
+      Host: platform106.halalkhor.info
 - name: 🇨🇱 CL 05 - xiaohe
   type: vless
   server: platform103.golnamakcert.top
