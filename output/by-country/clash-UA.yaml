@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - xiaohe
   type: vless
-  server: 45.158.185.172
+  server: 213.111.148.137
   port: 443
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z5n1.vpnpolar.online
+  servername: proxy-1cu.pages.dev
   network: ws
   ws-opts:
-    path: /beeline
+    path: /fp=android
     headers:
-      Host: z5n1.vpnpolar.online
+      Host: proxy-1cu.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
