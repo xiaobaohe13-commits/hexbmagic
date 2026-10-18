@@ -29,7 +29,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
   type: vmess
   server: 183.109.131.75
