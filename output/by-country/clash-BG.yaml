@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 BG 01 - xiaohe
+  type: vless
+  server: 188.114.98.5
+  port: 443
+  uuid: c3647117-baf4-4072-a872-fc762fc24ec9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-edge-2fba99-gw.eng-ops-7084b7.workers.dev
+  network: ws
+  ws-opts:
+    path: /9ea36182644d0f1f?ed=2560
+    headers:
+      Host: cdn-edge-2fba99-gw.eng-ops-7084b7.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 BG 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 BG 01 - xiaohe
+rules:
+- MATCH,PROXIES
